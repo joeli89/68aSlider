@@ -1,3 +1,5 @@
+
+
 .navbar {
 	background: #81818E;
 }
@@ -155,6 +157,19 @@
 
 .nav-tabs>li {
 	width: 120px;
+}
+
+.nav-pills li {
+		font-family: 'Playball', sans-serif;
+		font-size: 25px;
+}
+.nav-pills li:hover {
+		color: #000;
+}
+.nav-pills .active {
+		color: #000000;
+		border-bottom: solid 4px #000000;
+
 }
 
 

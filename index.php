@@ -71,13 +71,21 @@ echo $bgImages[$rand_keys];*/ echo "homepage";
 				</div>
 			</div>
 
+			<?php 
+				$all = "all";
+				$modern = "modern";
+				$bespoke = "bespoke";
+				$bedrooms = "bedrooms";
+
+			?>
+
 			<!-- Gallery Filter -->
 			<div data-scroll-reveal="enter left and move 50px over 1s" class="container text-center">
 			  <ul class="nav nav-pills">
-			    <li class="filter" data-filter="all">all</li>
-			    <li class="filter" data-filter="modern">Modern & Handless</li>
-			    <li class="filter" data-filter="bespoke">Traditional Bespoke</li>
-			    <li class="filter" data-filter="bedrooms">Bedrooms</li>
+			    <li class="filter" data-filter="<?php echo $all; ?>">All</li>
+			    <li class="filter" data-filter="<?php echo $modern; ?>">Modern & Handless</li>
+			    <li class="filter" data-filter="<?php echo $bespoke; ?>">Traditional Bespoke</li>
+			    <li class="filter" data-filter="<?php echo $bedrooms; ?>">Bedrooms</li>
 			  </ul>
 			</div> 
 
@@ -91,8 +99,8 @@ echo $bgImages[$rand_keys];*/ echo "homepage";
 
 				  	<li class="item <?php echo $image["class"]; ?> col-xs-4 no-padding">
 
-					    <a  href='<?php echo $image["img-main"]; ?>' data-lightbox="example-set" data-title='<?php echo $image["text"]; ?>'>
-					    	<img class="example-image" src='<?php echo $image["img-thumb"]; ?>' alt=""/>
+					    <a href='<?php echo $image["img-main"]; ?>' data-lightbox='<?php echo $image["class"]; ?>' data-title='<?php echo $image["text"]; ?>'>
+					    	<img class="example-image" src='<?php echo $image["img-thumb"]; ?>' alt='<?php echo $image["title"]; ?>' />
 					    	<span class="portfolio-hover">
 							  <span>
 							  	<span class="portfolio-title"><?php echo $image["title"]; ?></span><br>
@@ -207,7 +215,7 @@ echo $bgImages[$rand_keys];*/ echo "homepage";
 					<div id="content-holder">
 
 						<!-- Team Member 1 -->
-						<div data-scroll-reveal="enter top and move 50px over 1s" class="col-md-4 col-md-offset-2 team-member-holder">
+						<div data-scroll-reveal="enter top and move 50px over 1s" class="col-md-3 col-md-offset-2 team-member-holder">
 							<img src="img/team-member-1.jpg" alt="...">
 							<div class="team-info-holder">
 								<h3 class="team-name">Jillian Knowlton</h3>
@@ -230,7 +238,7 @@ echo $bgImages[$rand_keys];*/ echo "homepage";
 						</div>
 
 						<!-- Team Member 2 -->
-						<div data-scroll-reveal="enter bottom and move 50px over 1s" class="col-md-4 team-member-holder">
+						<div data-scroll-reveal="enter bottom and move 50px over 1s" class="col-md-3 team-member-holder">
 							<img src="img/team-member-2.jpg" alt="...">
 							<div class="team-info-holder">
 								<h3 class="team-name">Lora</h3>
@@ -248,6 +256,29 @@ echo $bgImages[$rand_keys];*/ echo "homepage";
 						            <div class="social-icon-holder">
 						                <a href="#"><span class="ion-social-dribbble social-icon"></span></a>
 					            	</div>
+					 			</div>
+							</div>
+						</div>
+
+						<!-- Team Member 3 -->
+						<div data-scroll-reveal="enter top and move 50px over 1s" class="col-md-3 team-member-holder">
+							<img src="img/team-member-1.jpg" alt="...">
+							<div class="team-info-holder">
+								<h3 class="team-name">Phil</h3>
+								<p class="team-job">Project Manager</p>
+							</div>
+							<div class="team-about">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integerelit zyzz alovea.
+								<div style="padding-top:15px;">
+						            <div class="social-icon-holder">
+						                <a href="#"><span class="ion-social-facebook social-icon"></span></a>
+						            </div>
+						            <div class="social-icon-holder">
+						                <a href="mailto:jillian@68adesigns.com"><span class="ion-ios7-email-outline social-icon"></span></a>
+						            </div>
+						            <div class="social-icon-holder">
+						                <a href="#"><span class="ion-social-dribbble social-icon"></span></a>
+						            </div>
 					 			</div>
 							</div>
 						</div>
